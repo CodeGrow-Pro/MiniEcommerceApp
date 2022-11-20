@@ -10,6 +10,6 @@ app.get('/',(req,res)=>{
 })
 app.use('/api',apiRouter);
 
-app.listen(port,()=>{
+app.listen(process.env.PORT || port,()=>{
     console.log("server started successfully...!")
 })
